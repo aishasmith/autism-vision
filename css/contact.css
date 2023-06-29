@@ -1,0 +1,628 @@
+/*CSS Stylesheet*/
+/*=========================Layout Styles====================*/
+/*=========================Navigation====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #161616;
+  color: #000;
+}
+
+/*--------Flexbox Container------*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  justify-content: space-around;
+}
+
+.one {
+  justify-content: space-around;
+}
+
+.container {
+  margin-bottom: 10px;
+}
+
+.container>* {
+  padding-bottom: 6em;
+}
+
+/*--------Classes------*/
+.contact-text {
+  color: #fff;
+  padding-top: 4em;
+  padding-bottom: 2em;
+}
+
+.contact-title {
+    text-align: center;
+    margin-top: 4em;
+    font-size: .5em;
+}
+
+.mission {
+  width: 100%;
+  line-height: 1.8em;
+  font-size: 1rem;
+  color: #fff;
+  padding-top: 10px;
+}
+
+.footitle {
+  font-size: 1.8em;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+/*form*/
+.name {
+  background-color: #bbd8d8;
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px;
+  font-size: larger;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  height: 50px;
+}
+
+.mail {
+  background-color: #bbd8d8;
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px;
+  font-size: larger;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  height: 50px;
+}
+
+.message {
+  background-color: #bbd8d8;
+  color: #555555;
+  border-radius: 2px;
+  width: 100%;
+  padding: 10px;
+  font-size: larger;
+  text-decoration: none;
+  border: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  height: 100px;
+}
+
+.bttn {
+  background-color: #1d5d66;
+  color: #fff;
+  transition: .8s;
+  line-height: 50%;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  height: 70px;
+  border-radius: 5px;
+}
+
+/*Footer*/
+.footer {
+  background: #333;
+  font-family: 'Open Sans', sans-serif;
+  color: #f2f2f2;
+  height: 1055px;
+  position: relative;
+  padding-top: 1em;
+}
+
+.footer .footer-content {
+  height: 0px;
+}
+
+.footer .footer-content .footer-section {
+  padding: 18px;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+  color: #80c0c0;
+}
+
+.footer .footer-content .about .contact span {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+  margin: 0 auto;
+}
+
+.footer .footer-content .about .socials a {
+  border: 1px solid #80c0c0;
+  width: 45px;
+  height: 41px;
+  padding-top: 5px;
+  margin-right: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.3em;
+  color: #80c0c0;
+  border-radius: 5px;
+}
+
+.contact-details {
+  font-size: 1.3em;
+  padding-bottom: 20px;
+  padding-left: 12px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+  float: right;
+  padding: .5rem 1rem;
+  background: #80c0c0;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+}
+
+.btn-big {
+  padding: 1rem 1.3rem;
+}
+
+.footer .footer-content .about h1 span {
+  color: #80c0c0;
+  position: relative;
+  top: -15px;
+  font-size: 35px;
+}
+
+.footer .footer-bottom {
+  background: #80c0c0;
+  color: #000;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+
+.footer .footer-content .about .socials a:hover {
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  transition: all .3s;
+}
+
+.footer .footer-content .links ul a {
+  display: block;
+  color: #f2f2f2;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+
+}
+
+.footer .footer-content .links ul a:hover {
+  color: #80c0c0;
+  margin-left: 15px;
+  transition: all .3s;
+}
+
+.footer .footer-content .contact-form .contact-input {
+  background: #272727;
+  width: 100%;
+  color: #bebdbd;
+  margin-bottom: 10px;
+  line-height: 1.5em;
+  padding: .7rem 1.2rem;
+  display: block;
+}
+
+.footer .footer-content .contact-form .contact-input:focus {
+  background: #1a1a1a;
+}
+
+/*========;
+=================**Media**====================*/
+/*=========================**Queries**====================*/
+/*Responsive 501/30em*/
+@media(min-width: 32em) {
+
+  /*Footer*/
+  .footer {
+    background: #333;
+    font-family: 'Open Sans', sans-serif;
+    color: #f2f2f2;
+    height: 1020px;
+    position: relative;
+    padding-top: 1em;
+  }
+
+  .footer .footer-content {
+    height: 0px;
+  }
+
+  .footer .footer-content .footer-section {
+    padding: 18px;
+  }
+
+  .footer .footer-content h1,
+  .footer .footer-content h2 {
+    color: #80c0c0;
+  }
+
+  .footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    margin: 0 auto;
+  }
+
+  .footer .footer-content .about .socials a {
+    border: 1px solid #80c0c0;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    color: #80c0c0;
+    border-radius: 5px;
+  }
+
+  .contact-details {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .btn {
+    float: right;
+    padding: .5rem 1rem;
+    background: #80c0c0;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+
+  .btn-big {
+    padding: 1rem 1.3rem;
+  }
+
+  .footer .footer-content .about h1 span {
+    color: #80c0c0;
+    position: relative;
+    top: -15px;
+    font-size: 35px;
+  }
+
+  .footer .footer-bottom {
+    background: #80c0c0;
+    color: #000;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+  }
+
+  .footer .footer-content .about .socials a:hover {
+    border: 1px solid #f2f2f2;
+    color: #f2f2f2;
+    transition: all .3s;
+  }
+
+  .footer .footer-content .links ul a {
+    display: block;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    padding-left: 2em;
+  }
+
+  .footer .footer-content .links ul a:hover {
+    color: #80c0c0;
+    margin-left: 15px;
+    transition: all .3s;
+  }
+
+  .footer .footer-content .contact-form .contact-input {
+    background: #272727;
+    width: 100%;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    padding: .7rem 1.2rem;
+    display: block;
+  }
+
+  .footer .footer-content .contact-form .contact-input:focus {
+    background: #1a1a1a;
+  }
+
+  /*form*/
+  .name {
+    background-color: #bbd8d8;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 50px;
+  }
+
+  .mail {
+    background-color: #bbd8d8;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 50px;
+  }
+
+  .message {
+    background-color: #bbd8d8;
+    color: #555555;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 100px;
+  }
+
+  .bttn {
+    background-color: #1d5d66;
+    color: #fff;
+    transition: .8s;
+    line-height: 50%;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 70px;
+    border-radius: 5px;
+  }
+    
+ .contact-title {
+    text-align: center;
+    margin-top: 4.5em;
+    font-size: .7em;
+   }
+
+}
+
+
+/*------------------------------------------------***Global View 1024/64em***--------------------------------------------*/
+@media(min-width: 64em) {
+
+  /*Footer*/
+  .footer {
+    background: #333;
+    font-family: 'Open Sans', sans-serif;
+    color: #f2f2f2;
+    height: 450px;
+    position: relative;
+    padding-top: 1em;
+  }
+
+  .footer .footer-content {
+    height: 0px;
+    display: flex;
+  }
+
+  .footer .footer-content .footer-section {
+    flex: 1;
+    padding: 18px;
+  }
+
+  .footer .footer-content h1,
+  .footer .footer-content h2 {
+    color: #80c0c0;
+  }
+
+  .footer .footer-content .about .contact span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    margin: 0 auto;
+  }
+
+  .footer .footer-content .about .socials a {
+    border: 1px solid #80c0c0;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    color: #80c0c0;
+    border-radius: 5px;
+  }
+
+  .contact-details {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    padding-left: 12px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .btn {
+    float: right;
+    padding: .5rem 1rem;
+    background: #80c0c0;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+  }
+
+  .btn-big {
+    padding: 1rem 1.3rem;
+  }
+
+  .footer .footer-content .about h1 span {
+    color: #80c0c0;
+    position: relative;
+    top: -15px;
+    font-size: 35px;
+  }
+
+  .footer .footer-bottom {
+    background: #80c0c0;
+    color: #000;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+  }
+
+  .footer .footer-content .about .socials a:hover {
+    border: 1px solid #f2f2f2;
+    color: #f2f2f2;
+    transition: all .3s;
+  }
+
+  .footer .footer-content .links ul a {
+    display: block;
+    color: #f2f2f2;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+
+  .footer .footer-content .links ul a:hover {
+    color: #80c0c0;
+    margin-left: 15px;
+    transition: all .3s;
+  }
+
+  .footer .footer-content .contact-form .contact-input {
+    background: #272727;
+    width: 100%;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    padding: .7rem 1.2rem;
+    display: block;
+  }
+
+  .footer .footer-content .contact-form .contact-input:focus {
+    background: #1a1a1a;
+  }
+
+  .mission {
+    width: 100%;
+    line-height: 1.8em;
+    font-size: 1rem;
+    color: #fff;
+    padding-top: 10px;
+  }
+
+  .footitle {
+    font-size: 1.8em;
+    margin: 0;
+    padding-bottom: 1em;
+  }
+
+  /*form*/
+  .name {
+    background-color: #bbd8d8;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    color: #000;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 50px;
+  }
+
+  .mail {
+    background-color: #bbd8d8;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 50px;
+  }
+
+  .message {
+    background-color: #bbd8d8;
+    color: #555555;
+    border-radius: 2px;
+    width: 100%;
+    padding: 10px;
+    font-size: larger;
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 100px;
+  }
+
+  .bttn {
+    background-color: #1d5d66;
+    color: #fff;
+    transition: .8s;
+    line-height: 50%;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 70px;
+    border-radius: 5px;
+  }
+}
